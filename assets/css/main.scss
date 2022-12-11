@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$color: #050613;
+
+body {
+
+    header {
+        .navbar {
+            background-color: #100b19;
+            
+            a {
+                color: #FFFF;
+                text-decoration: none;
+                padding: 10px 20px;
+
+                &:hover, &.active, &:focus {
+                    color: #6366f1;
+                    transition: all .2s;
+                }
+            }
+        }
+        
+        .carousel-caption {
+            padding-bottom: 8%;
+
+            h1 { font-size: 4rem;}
+        }
+
+        .carousel-indicators {
+            bottom: 15%;
+        }
+    }
+
+    section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        a {
+            text-decoration: none;
+            color: #7e81fd;
+
+            &:hover {
+                color: #44369c;
+                transition: all .3s;
+            }
+        }
+
+        h1 {
+            color: #050613;
+        }
+
+        .title-divisor {
+            background-color: #1f202dbb;
+            height: 0.10rem;
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #6366f1;
+        }
+
+        &.our_services {
+            i {
+                font-size: 3rem;
+                color: #FFF;
+                background-color: #6366f1;
+                padding: 18px 15px;
+                text-align: center;
+                border-radius: 100%;
+            }
+    
+            .service-content {
+                color: #393939;
+            }
+        }
+
+        &.about {
+            p {
+                text-align: justify;
+            }
+        }
+
+        &.clients {
+            hr { color: #7e81fd }
+            
+            .card {
+                border: none !important;
+
+                .testimony {
+                    font-size: .8rem;
+                }
+
+                .testimony-picture {
+                    width: 35px;
+                    height: 30px;
+                    box-shadow: 0 0 1px 3px rgb(255, 255, 255), 0 0 3px 3px rgb(0, 0, 0);
+                    border-radius: 100%;
+                    margin-top: 7px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        &.pricing {
+
+             img.img-pricing {
+                height: 100%;
+                width: 100%;
+             }
+        }
+
+        &.contact {
+            width: 90%;
+            margin: 50px auto;
+
+            img.contact-img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 700px;
+            }
+
+            iframe.map {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    footer.footer {
+        background-color: #0b0f19;
+        padding: 25px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+
+    .btn-classic {
+        background-color: #6366f1;
+        color: #FFF;
+    }
+
+    .btn-classic-outline {
+        border-color: #6366f1;
+        color: #6366f1;
+        background-color: transparent;
+
+        &:hover { color: #FFF }
+
+        &:focus {
+            box-shadow: 0 0 3px 0 rgb(175, 172, 208);
+        }
+    }
+
+    .btn-classic:hover, .btn-classic-outline:hover {
+        background-color: #5052cd;
+        transition: all .3s;
+    }
+
+    .slide-container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    .slide-content{
+        margin: 0 40px;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+    .card{
+        border-radius: 25px;
+        background-color: rgb(245, 248, 245);
+        margin: 20px 0;
+    }
+    .image-content,
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+    }
+    .image-content{
+        position: relative;
+        row-gap: 5px;
+        padding: 25px 0;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #4070F4;
+        border-radius: 25px 25px 0 25px;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: #6366f1;
+        }
+
+        &::after {
+            border-radius: 0 25px 0 0;
+            background-color: #FFF;
+        }
+    }
+
+    .card-image {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: #FFF;
+        padding: 3px;
+    }
+    .card-image .card-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #6366f1;
+    }
+    .name{
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
+    .description{
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+    }
+    .button {
+        border: none;
+        font-size: 16px;
+        color: #FFF;
+        padding: 8px 16px;
+        background-color: #6366f1;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #6366f1;
+        }
+    }
+    
+    .swiper-navBtn {
+        color: #6E93f7;
+        transition: color 0.3s ease;
+
+        &::before, &::after {
+            font-size: 35px;
+        }
+
+        &:hover {
+            color: #4070F4;
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #6366f1;
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #6366f1;  
+    }
+    
+    @media screen and (max-width: 768px) {
+        .slide-content{
+            margin: 0 10px;
+        }
+
+        .swiper-navBtn{
+            display: none;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #0b0f19;
+    }
+}
