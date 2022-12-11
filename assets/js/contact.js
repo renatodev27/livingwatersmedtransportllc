@@ -18,8 +18,7 @@ function processContactForm() {
     dataForm.append('last_name', lastName.value)
     dataForm.append('email', email.value)
 
-    const url = '../send.php'
-    
+    const url = '././send.php'
 
     fetch(url, {
         method: 'post',
@@ -29,27 +28,38 @@ function processContactForm() {
     })
     .then( (response) => response.json())
     .then( (data) => { 
+        let alert = undefined;
+        
         if (data.status === 200) {
-            const alert = drawAlert('success', 'Send successful!', data.body)
+            alert = drawAlert('success', 'Send successful!', data.body)
 
             Swal.fire(alert).then( (result) => {
                 if (result.value) {
-                    btnSubmit.innerHTML = ''
-                    btnSubmit.innerHTML += '<i class="fas fa-jedi"></i> Begin!'
-                    btnSubmit.removeAttribute('disabled')
-
-                    firstName.value = ''
-                    lastName.value = ''
-                    email.value = ''
+                    callbackProcess(btnSubmit)
                 }
             })
         }
 
         if (data.status === 500) {
-            const alert = drawAlert('success', 'Send successful!', data.body)
-            swal.fire(alert)
+            alert = drawAlert('error', 'Oops..!', data.errorMessage)
+
+            swal.fire(alert).then ( (result) => {
+                if (result.value) {
+                    callbackProcess(btnSubmit)
+                }
+            })
         }
     })
+}
+
+function callbackProcess(btnSubmit) {
+    btnSubmit.innerHTML = undefined
+    btnSubmit.innerHTML += '<i class="fas fa-jedi"></i> Begin!'
+    btnSubmit.removeAttribute('disabled')
+
+    firstName.value = undefined
+    lastName.value = undefined
+    email.value = undefined
 }
 
 function drawAlert(status, title, message) {

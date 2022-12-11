@@ -51,5 +51,5 @@ drawSwiper(swiperClients, 2);
 function begin() {
     base_url = document.getElementById('home-btn');
     url = base_url.getAttribute('home');
-    window.location.href = `${url}/contact`;
+    window.location.href = `${url}contact`;
 }

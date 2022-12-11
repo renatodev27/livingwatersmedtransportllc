@@ -200,7 +200,7 @@
         <div class="swiper-pagination"></div>
     </div>
     <div class="text-center">
-        <button class="btn btn-classic">Begin your journey</button>
+        <button class="btn btn-classic" onclick="begin()">Begin your journey</button>
     </div>
 </section>
 
@@ -267,7 +267,7 @@
                 separately from services.
                 ​Call us now to discuss your options.
             </p>
-            <button class="btn btn-classic mt-4">Begin your journey</button>
+            <button class="btn btn-classic mt-4" onclick="begin()">Begin your journey</button>
         </div>
     </div>
 </section>
