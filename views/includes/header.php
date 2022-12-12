@@ -27,22 +27,22 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="<?php echo SERVER_URL ?>ambulance-stretchervan">
                                         <i class="fas fa-ambulance me-1"></i> Ambulance & Strecher Van
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="<?php echo SERVER_URL ?>wheelchair">
                                         <i class="fas fa-wheelchair me-2"></i> Wheelchair
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="<?php echo SERVER_URL ?>long-distance">
                                         <i class="fas fa-road me-2"></i> Long Distance
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="<?php echo SERVER_URL ?>groups">
                                         <i class="fas fa-users me-2"></i> Groups
                                     </a>
                                 </li>
@@ -60,10 +60,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#about">About</a>
+                            <a href="<?php echo SERVER_URL ?>#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pricing">Pricing</a>
+                            <a href="<?php echo SERVER_URL ?>#pricing">Pricing</a>
                         </li>
                     <?php endif; ?>
                     <li class="nav-item">
@@ -74,7 +74,7 @@
         </div>
     </nav>
     <?php if ($is_principal) : ?>
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-5 pt-3" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -84,28 +84,28 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/imgs/wallpapers/medical_transportation.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
                     <h1>Ambulance & Stretcher Van</h1>
                     <p>Transport by ambulance or strecher van for your medical transport needs</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/imgs/wallpapers/medical_appointments.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
                     <h1>Medical Appointments</h1>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/imgs/wallpapers/medical_tratment.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
                     <h1>Medical Treatments</h1>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/imgs/wallpapers/senior_living.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
                     <h1>Senior Living</h1>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>

@@ -15,14 +15,48 @@ body header .navbar a:hover, body header .navbar a.active, body header .navbar a
   color: #6366f1;
   transition: all 0.2s;
 }
-body header .carousel-caption {
-  padding-bottom: 8%;
+@media (max-width: 800px) {
+  body header .carousel-caption {
+    padding-bottom: 3% !important;
+  }
+  body header .carousel-caption h1 {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 630px) {
+  body header .carousel-caption h1 {
+    font-size: 2.2rem !important;
+  }
+}
+@media (max-width: 520px) {
+  body header .carousel-caption h1 {
+    font-size: 1.8rem !important;
+  }
+  body header .carousel-caption p {
+    font-size: 0.85rem !important;
+  }
+}
+@media (max-width: 430px) {
+  body header .carousel-caption h1 {
+    font-size: 1.2rem !important;
+  }
+  body header .carousel-caption p {
+    font-size: 0.85rem !important;
+  }
+}
+@media (max-width: 365px) {
+  body header .carousel-caption h1 {
+    font-size: 1rem !important;
+  }
+  body header .carousel-caption p {
+    font-size: 0.75rem !important;
+  }
+  body header .carousel-indicators {
+    margin-bottom: 0 !important;
+  }
 }
 body header .carousel-caption h1 {
   font-size: 4rem;
-}
-body header .carousel-indicators {
-  bottom: 15%;
 }
 body section {
   padding-top: 120px;
@@ -58,6 +92,19 @@ body section.our_services i {
 }
 body section.our_services .service-content {
   color: #393939;
+}
+body section.about .about-desc {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  body section.about .about-desc {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  body section.about .about-desc {
+    width: 75%;
+  }
 }
 body section.about p {
   text-align: justify;
@@ -98,9 +145,44 @@ body section.contact img.contact-img {
   width: 100%;
   height: 700px;
 }
+@media (max-width: 767px) {
+  body section.contact img.contact-img {
+    height: 400px !important;
+  }
+}
+@media (min-width: 920px) and (max-width: 1020px) {
+  body section.contact .img-logo {
+    width: 180px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 919px) {
+  body section.contact .img-logo {
+    width: 145px !important;
+  }
+}
 body section.contact iframe.map {
   width: 100%;
   height: 100%;
+}
+body section.wheelchair, body section.ambulance-sv, body section.long-distance {
+  width: 95% !important;
+  margin: 50px auto;
+}
+body section.wheelchair img.section-img, body section.ambulance-sv img.section-img, body section.long-distance img.section-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 400px;
+}
+body section.ambulance-sv img.section-img {
+  height: 500px !important;
+}
+@media (max-width: 767px) {
+  body section.ambulance-sv img.section-img {
+    height: 400px !important;
+  }
 }
 body footer.footer {
   background-color: #0b0f19;

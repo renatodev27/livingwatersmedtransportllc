@@ -9,11 +9,15 @@
     <?php require_once 'includes/links.php'; ?>
 </head>
 <body>
-    <?php require_once 'includes/navbar.php'; ?>
+    <?php if ($content === '404') : ?>
+        <?php require_once 'content/' . $content . '.php'; ?>
+    <?php else : ?>
+        <?php require_once 'includes/header.php'; ?>
 
-    <?php require_once 'content/' . $content; ?>
+        <?php require_once 'content/' . $content; ?>
 
-    <?php require_once 'includes/footer.php'; ?>
-    <?php require_once 'includes/scripts.php' ?>
+        <?php require_once 'includes/footer.php'; ?>
+        <?php require_once 'includes/scripts.php' ?>
+    <?php endif; ?>
 </body>
 </html>

@@ -22,15 +22,48 @@ body {
                 }
             }
         }
-        
-        .carousel-caption {
-            padding-bottom: 8%;
 
-            h1 { font-size: 4rem;}
+        @media (max-width: 800px) {
+            .carousel-caption {
+                padding-bottom: 3% !important;
+    
+                h1 { font-size: 3rem !important;}
+            }
         }
 
-        .carousel-indicators {
-            bottom: 15%;
+        @media (max-width: 630px) {
+            .carousel-caption {
+                h1 { font-size: 2.2rem !important;}
+            }
+        }
+
+        @media (max-width: 520px) {
+            .carousel-caption {
+                h1 { font-size: 1.8rem !important; }
+                p { font-size: .85rem !important; }
+            }
+        }
+
+        @media (max-width: 430px) {
+            .carousel-caption {
+                h1 { font-size: 1.2rem !important; }
+                p { font-size: .85rem !important; }
+            }
+        }
+        
+        @media (max-width: 365px) {
+            .carousel-caption {
+                h1 { font-size: 1rem !important; }
+                p { font-size: .75rem !important; }
+            }
+
+            .carousel-indicators {
+                margin-bottom: 0 !important;
+            }
+        }
+        
+        .carousel-caption {
+            h1 { font-size: 4rem;}
         }
     }
 
@@ -79,6 +112,19 @@ body {
         }
 
         &.about {
+
+            .about-desc {
+                margin: 0 auto;
+
+                @media (min-width: 992px) {
+                    width: 90%;
+                }
+
+                @media (min-width: 992px) {
+                    width: 75%;
+                }
+            }
+
             p {
                 text-align: justify;
             }
@@ -123,11 +169,47 @@ body {
                 object-position: center;
                 width: 100%;
                 height: 700px;
+
+                @media (max-width: 767px) {
+                    height: 400px !important;
+                }
+            }
+
+            @media (min-width: 920px) and (max-width: 1020px) {
+                .img-logo {
+                    width: 180px !important;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 919px) {
+                .img-logo {
+                    width: 145px !important;
+                }
             }
 
             iframe.map {
                 width: 100%;
                 height: 100%;
+            }
+        }
+
+        &.wheelchair, &.ambulance-sv, &.long-distance {
+            width: 95% !important;
+            margin: 50px auto;
+
+            img.section-img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        &.ambulance-sv img.section-img {
+            height: 500px !important;
+
+            @media (max-width: 767px) {
+                height: 400px !important;
             }
         }
     }

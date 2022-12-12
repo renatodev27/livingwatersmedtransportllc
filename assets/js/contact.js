@@ -35,7 +35,7 @@ function processContactForm() {
 
             Swal.fire(alert).then( (result) => {
                 if (result.value) {
-                    callbackProcess(btnSubmit)
+                    callbackProcess(btnSubmit, firstName, lastName, email)
                 }
             })
         }
@@ -52,14 +52,14 @@ function processContactForm() {
     })
 }
 
-function callbackProcess(btnSubmit) {
-    btnSubmit.innerHTML = undefined
+function callbackProcess(btnSubmit, firstName, lastName, email) {
+    btnSubmit.innerHTML = ''
     btnSubmit.innerHTML += '<i class="fas fa-jedi"></i> Begin!'
     btnSubmit.removeAttribute('disabled')
 
-    firstName.value = undefined
-    lastName.value = undefined
-    email.value = undefined
+    firstName.value = ''
+    lastName.value = ''
+    email.value = ''
 }
 
 function drawAlert(status, title, message) {

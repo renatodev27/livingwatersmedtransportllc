@@ -17,7 +17,7 @@
                             some services may be covered by Medicare and/or your insurance provider
                         </p>
                         <div class="text-center mt-5">
-                            <a href="#">Ver más</a>
+                            <a href="<?php SERVER_URL ?>ambulance-stretchervan">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                             and have hydraulic lifts so the patient never has to leave the comfort of their chair.
                         </p>
                         <div class="text-center mt-5">
-                            <a href="#">Ver más</a>
+                            <a href="<?php SERVER_URL ?>wheelchair">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             wide variety of medical conditions. <br><br>
                         </p>
                         <div class="text-center mt-5">
-                            <a href="#">Ver más</a>
+                            <a href="<?php SERVER_URL ?>long-distance">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                             We have assisted in evacuations and group travel needs for many occasions requiring such service.
                         </p>
                         <div class="text-center mt-5">
-                            <a href="#">Ver más</a>
+                            <a href="<?php SERVER_URL ?>groups">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -68,6 +68,10 @@
         <div class="swiper-button-next swiper-navBtn"></div>
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-classic mt-4" onclick="begin()">Begin your journey</button>
     </div>
 </section>
 
@@ -210,7 +214,7 @@
         <h1 class="text-center">About Us</h1>
         <div class="title-divisor"></div>
     </div>
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-5 about-desc">
         <img src="assets/imgs/img-logo.png" width="120" class="mb-5">
         <h3 class="text-center">Living Waters Medtransport LLC provides medical transportation thinking in your principal needs</h3>
 
@@ -254,7 +258,7 @@
         </div>
         <div class="col-0 col-md-1"></div>
         <div class="col-md-8">
-            <h3 class="title">Affordable prices and comfortable </h3>
+            <h3 class="title">Affordable and comfortable prices</h3>
             <hr class="mb-4">
             <p class="mt-4">
                 Whether you need assisted transportation for a medical appointment, hospital admit or discharge, you can depend 

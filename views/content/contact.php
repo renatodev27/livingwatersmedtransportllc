@@ -1,7 +1,7 @@
 <section class="contact container-fluid">
         <div class="row">
             <div class="col-md-3 text-end">
-                <img src="assets/imgs/misc/contact.jpg" class="contact-img">
+                <img src="assets/imgs/misc/contact.jpg" class="contact-img mb-3">
             </div>
             <div class="col-md-9 ps-md-5">
                 <h1 class="title">Contact Us</h1>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 mt-5">
-                        <img src="assets/imgs/img-logo.png">
+                        <img src="assets/imgs/img-logo.png" class="img-logo">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                                     <h5>Email address</h5>
                                     <input class="form-control" id="email" placeholder="example@mail.com">
                                 </div>
-                                <div class="mt-4">
+                                <div class="mt-4 mb-3">
                                     <button type="submit" class="btn btn-classic" id="btn-send">
                                         <i class="fas fa-jedi"></i> Begin!
                                     </button>
