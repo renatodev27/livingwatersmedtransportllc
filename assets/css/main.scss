@@ -6,6 +6,7 @@
 $color: #050613;
 
 body {
+    a { cursor: pointer }
 
     header {
         .navbar {
@@ -224,6 +225,7 @@ body {
             padding: 10px;
         }
     }
+    
 
     .btn-classic {
         background-color: #6366f1;
@@ -245,6 +247,22 @@ body {
     .btn-classic:hover, .btn-classic-outline:hover {
         background-color: #5052cd;
         transition: all .3s;
+    }
+
+    .btn-whatsapp {
+        background-color: #26b43e;
+        color: #FFF;
+        border-radius: 50px;
+        font-size: 0.8rem;
+
+        &:hover {
+            background-color: #0e9123;
+            color: rgb(245, 248, 245)
+        }
+
+        &:active {
+            background-color: #3d9d4d !important;
+        }
     }
 
     .slide-container{

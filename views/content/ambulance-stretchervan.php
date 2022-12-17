@@ -1,7 +1,7 @@
 <section class="ambulance-sv container-fluid">
     <div class="row">
         <div class="col-md-3">
-            <img src="assets/imgs/misc/stretcher.jpg" class="section-img">
+            <img src="assets/imgs/misc/stretcher.jpg" class="section-img mb-4">
         </div>
         <div class="col-8 col-md-8 ps-md-5">
             <h1 class="title">Ambulance & Stretcher Van</h1>

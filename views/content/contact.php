@@ -1,7 +1,7 @@
 <section class="contact container-fluid">
         <div class="row">
             <div class="col-md-3 text-end">
-                <img src="assets/imgs/misc/contact.jpg" class="contact-img mb-3">
+                <img src="assets/imgs/misc/contact.jpg" class="contact-img mb-4">
             </div>
             <div class="col-md-9 ps-md-5">
                 <h1 class="title">Contact Us</h1>
@@ -10,24 +10,24 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="mt-4">
+                            <h4 class="fw-normal">Give us a call</h4>
+                            <i class="fa fa-mobile"></i> 
+                            <a onclick="callIn()">+1 (864) 633-4162</a> 
+                        </div>
+
+                        <div class="mt-4">
                             <h4 class="fw-normal">Send us an email</h4>
                             <label>
-                                <i class="fas fa-envelope"></i> livingwatersmedtransportllc@gmail.com
-                            </label>
-                        </div>
-        
-                        <div class="mt-4">
-                            <h4 class="fw-normal">Give us a call</h4>
-                            <label>
-                                <i class="fa fa-mobile"></i> 888-999-7700
+                                <i class="fas fa-envelope"></i> 
+                                <a href="mailto:livingwatersmedtransportllc@gmail.com">livingwatersmedtransportllc@gmail.com</a>
                             </label>
                         </div>
         
                         <div class="mt-4">
                             <h4 class="fw-normal">Whatsapp to us</h4>
-                            <label class="text-success">
-                                <i class="fa fa-whatsapp"></i> 888-999-7700
-                            </label>
+                            <button class="btn btn-whatsapp" onclick="toWhatsapp()">
+                                <i class="fa fa-whatsapp"></i> +1 (864) 633-4162
+                            </button>
                         </div>
 
                         <div class="mt-4">

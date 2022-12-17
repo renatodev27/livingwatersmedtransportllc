@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body a {
+  cursor: pointer;
+}
 body header .navbar {
   background-color: #100b19;
 }
@@ -211,6 +214,19 @@ body .btn-classic-outline:focus {
 body .btn-classic:hover, body .btn-classic-outline:hover {
   background-color: #5052cd;
   transition: all 0.3s;
+}
+body .btn-whatsapp {
+  background-color: #26b43e;
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+body .btn-whatsapp:hover {
+  background-color: #0e9123;
+  color: rgb(245, 248, 245);
+}
+body .btn-whatsapp:active {
+  background-color: #3d9d4d !important;
 }
 body .slide-container {
   width: 90%;

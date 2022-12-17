@@ -53,3 +53,11 @@ function begin() {
     url = base_url.getAttribute('home');
     window.location.href = `${url}contact`;
 }
+
+function toWhatsapp() {
+    window.location.href = "https://api.whatsapp.com/send?phone=18646334162";
+}
+
+function callIn() {
+    window.location.href="tel:18646334162";
+}
